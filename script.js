@@ -8,6 +8,12 @@ async function Search(){
     display(data);
 }
 
+function handleKeyPress(event){
+    if(event.key == 'Enter'){
+        document.getElementById('search-button').click();
+    }
+}
+
 function display(data){
     const resultsDiv = document.getElementById('results');
     resultsDiv.innerHTML = '';
